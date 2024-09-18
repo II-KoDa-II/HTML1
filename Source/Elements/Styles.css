@@ -1,23 +1,52 @@
+@font-face {
+    font-family: "Signature";
+    src: url(Fonts/BlackSignature.otf);
+}
+@font-face {
+    font-family: "Changa";
+    src: url(Fonts/ChangaOne.ttf);
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(Fonts/Roboto.ttf);
+}
+
 * {
     padding: 0px;
     margin: 0px;
 }
 
 body {
-    min-width: 550px;
+    min-width: 600px;
 }
 
 p {
-    margin: 0px;
     color: #434343;
 }
 
 a {
+    font-family: Roboto;
     text-decoration: none;
+    color: #434343;
 }
 
 .margin10{
     margin-inline-start: 10%;
+}
+
+.fontSignature {
+    font-family: Signature;
+    font-size: 20px;
+    color: #3E3E3E;
+}
+
+.fontChangaLogo {
+    font-family: Changa;
+    font-size: 30px;
+}
+
+.purpleHighlight {
+    color:#8A53FF;
 }
 
 .headerContainer {
@@ -47,7 +76,6 @@ a {
 
 .menuButton {
     display: flex;
-    color: #495367;
     border-radius: 5px;
     padding: 15px;
 }
@@ -74,16 +102,14 @@ a {
 
 .highlightText {
     display: flex;
+    font-family: Changa;
     font-size: 70px;
     /*Размер пробела при данном размере текста - ровно 18px*/
     gap: 18px;
-    font-weight: bold;
-}
-.purpleHighlight {
-    color:#8A53FF;
 }
 
 .mainText {
+    font-family: Roboto;
     font-size: 25px;
     margin-top: 5px;
 }
