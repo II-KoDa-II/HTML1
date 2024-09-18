@@ -31,6 +31,32 @@ p {
     gap: 20px;
 }
 
-.frontImage {
-    width: 100%
+/*Нужны указания на более точное поведение фоновой картинки при масштабировании страницы*/
+.backgroundImage {
+    background-image: url("Images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    min-height: 50vh;
+}
+
+.highlightText {
+    display: flex;
+    font-size: 70px;
+    /*Размер пробела при данном размере текста - ровно 18px*/
+    gap: 18px;
+    padding-left: 10%;
+}
+.purpleHighlight {
+    color:blueviolet;
+}
+
+.mainText {
+    font-size: 20px;
+    padding-left: 10%;
+    padding-top: 5px;
 }
