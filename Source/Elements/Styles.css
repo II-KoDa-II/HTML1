@@ -1,0 +1,36 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    min-width: 500px;
+}
+
+p {
+    margin: 0px;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.menuContainer {
+    display: flex;
+    justify-content: right;
+    align-self: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.frontImage {
+    width: 100%
+}
