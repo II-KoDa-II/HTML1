@@ -24,8 +24,12 @@ a {
     text-decoration: none;
 }
 
-.standardMargins{
+.standardMargins {
     margin-inline: 10%;
+}
+
+.nextBlock {
+    margin-block-start: 50px;
 }
 
 
@@ -76,7 +80,7 @@ a {
 .menuButton {
     display: flex;
     border-radius: 5px;
-    padding: 15px;
+    padding: 20px;
     font-family: Roboto;
     color: #495367;
 }
@@ -84,6 +88,16 @@ a {
     background-color: #EFEFEF;
 }
 
+.menuHighlight {
+    display: flex;
+    border-radius: 5px;
+    padding: 20px;
+    font-family: Roboto;
+    color:#8A53FF;
+}
+.menuHighlight:hover {
+    background-color: #EFEFEF;
+}
 
 
 
@@ -157,7 +171,7 @@ a {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin-block: 50px;
+    margin-block-start: 75px;
     column-gap: 30px;
     padding: 5px;
     border-radius: 5px;
@@ -169,7 +183,7 @@ a {
 
 .destinationImage {
     width: calc(50% - 15px);
-    border-radius: 0.75vw;
+    border-radius: max(10px, 0.75vw);
 }
 
 .destinationText {
@@ -179,7 +193,7 @@ a {
     width: calc(50% - 15px);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1215px) {
     .featuredDestination {
         flex-direction: column;
     }
@@ -190,7 +204,7 @@ a {
     }
 }
 
-.genericFlairText {
+.genericFlair {
     margin-block-end: 5px;
     font-family: Roboto;
     text-transform: uppercase;
@@ -220,6 +234,62 @@ a {
     align-items: center;
     padding-block: 20px;
     gap: 10px;
+    font-family: Roboto;
+    font-size: 15px;
+    color: #7A43EF;
+}
+
+
+
+
+
+.joinAdventures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-block: 75px;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+@media (max-width: 1440px) {
+    .cardContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.card:hover {
+    background: rgb(0, 0, 0, 0.05);
+}
+
+.cardImage {
+    border-radius: max(10px, 0.75vw);
+}
+
+.cardTitle {
+    font-family: Changa;
+    font-size: 25px;
+    color: #434343;
+}
+
+.cardFlair {
+    margin-block-end: 5px;
     font-family: Roboto;
     font-size: 15px;
     color: #7A43EF;
