@@ -160,7 +160,7 @@ a {
     color: #434343;
 }
 .buttonVideo:hover {
-    background: rgb(0, 0, 0, 0.05);
+    background: #00000010;
 }
 
 
@@ -173,12 +173,12 @@ a {
     flex-wrap: wrap;
     margin-block-start: 75px;
     column-gap: 30px;
-    padding: 5px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: max(10px, 0.75vw);
     font-size: 40px;
 }
 .featuredDestination:hover {
-    background: rgb(0, 0, 0, 0.05);
+    background: #00000010;
 }
 
 .destinationImage {
@@ -193,7 +193,7 @@ a {
     width: calc(50% - 15px);
 }
 
-@media (max-width: 1215px) {
+@media (max-width: 1230px) {
     .featuredDestination {
         flex-direction: column;
     }
@@ -205,7 +205,7 @@ a {
 }
 
 .genericFlair {
-    margin-block-end: 5px;
+    margin-block: 5px;
     font-family: Roboto;
     text-transform: uppercase;
     font-weight: bold;
@@ -214,14 +214,14 @@ a {
 }
 
 .genericTitle {
-    margin-block-end: 5px;
+    margin-block: 5px;
     font-family: Changa;
     font-size: 40px;
     color: #434343;
 }
 
 .genericDescription {
-    margin-block-end: 5px;
+    margin-block: 5px;
     font-family: Roboto;
     font-size: 20px;
     color: #434343;
@@ -259,10 +259,11 @@ a {
     margin-top: 50px;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1490px) {
     .cardContainer {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        justify-items: center;
     }
 }
 
@@ -270,12 +271,12 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
     border-radius: 5px;
 }
 .card:hover {
-    background: rgb(0, 0, 0, 0.05);
+    background: #00000010;
 }
 
 .cardImage {
@@ -293,4 +294,83 @@ a {
     font-family: Roboto;
     font-size: 15px;
     color: #7A43EF;
+}
+
+
+
+
+
+.formBackground {
+    background-image: url("Images/shareTravels.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 75px;
+}
+
+.formBody {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.formText {
+    width: calc(100% - 35px);
+    padding: 15px;
+    font-family: Roboto;
+    font-size: 15px;
+    border: solid;
+    border-color: #0000003B;
+    border-width: 2px;
+    border-radius: 5px;
+    margin-block: 5px;
+}
+.formInput::placeholder {
+    color: #00000099;
+}
+
+.formSelect {
+    width: calc(100%);
+    padding: 15px;
+    font-family: Roboto;
+    font-size: 15px;
+    border: solid;
+    border-color: #0000003B;
+    border-width: 2px;
+    border-radius: 5px;
+    margin-block: 5px;
+    color: #00000099;
+    appearance: none;
+    background-image: url("Icons/dropDown.svg");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+.formTextarea {
+    width: calc(100% - 35px);
+    padding: 15px;
+    font-family: Roboto;
+    font-size: 15px;
+    border: solid;
+    border-color: #0000003B;
+    border-width: 2px;
+    border-radius: 5px;
+    margin-block: 5px;
+    resize: none;
+    min-height: 75px;
+}
+
+.formSubmit {
+    display: flex;
+    background-color: #8A53FF;
+    border:none;
+    border-radius: 5px;
+    padding: 15px 100px;
+    color: #FFFFFF;
+}
+.formSubmit:hover {
+    background-color: #7A43EF;
 }
