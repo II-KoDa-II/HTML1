@@ -52,7 +52,8 @@ a {
 
 
 
-.headerContainer {
+
+.headerFooter {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,33 +71,53 @@ a {
     background-color: #EFEFEF;
 }
 
-.menuContainer {
+.headerContainer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.menuButton {
+.headerButton {
     display: flex;
     border-radius: 5px;
     padding: 20px;
     font-family: Roboto;
+    font-size: 15px;
     color: #495367;
 }
-.menuButton:hover {
+.headerButton:hover {
     background-color: #EFEFEF;
 }
 
-.menuHighlight {
+.headerHighlight {
     display: flex;
     border-radius: 5px;
     padding: 20px;
     font-family: Roboto;
     color:#8A53FF;
 }
-.menuHighlight:hover {
+.headerHighlight:hover {
     background-color: #EFEFEF;
+}
+
+.footerCopyright {
+    display: flex;
+    border-radius: 5px;
+    margin-block-end: 20px;
+    font-family: Roboto;
+    font-size: 15px;
+    color: #495367;
+}
+
+.footerButton {
+    display: flex;
+    border-radius: 5px;
+    margin-block-end: 20px;
+    margin-inline: 15px;
+    font-family: Roboto;
+    font-size: 15px;
+    color: #495367;
 }
 
 
@@ -116,10 +137,10 @@ a {
 
 .highlightText {
     display: flex;
+    flex-direction: column;
     font-family: Changa;
     font-size: 70px;
     color: #434343;
-    gap: 0.25em;
 }
 
 .mainText {
@@ -170,12 +191,12 @@ a {
 .featuredDestination {
     display: flex;
     justify-content: flex-start;
+    flex-direction: row;
     flex-wrap: wrap;
     margin-block-start: 75px;
     column-gap: 30px;
     padding: 10px;
     border-radius: max(10px, 0.75vw);
-    font-size: 40px;
 }
 .featuredDestination:hover {
     background: #00000010;
@@ -290,7 +311,7 @@ a {
 }
 
 .cardFlair {
-    margin-block-end: 5px;
+    margin-block: 5px;
     font-family: Roboto;
     font-size: 15px;
     color: #7A43EF;
@@ -303,6 +324,7 @@ a {
 .formBackground {
     background-image: url("Images/shareTravels.jpg");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -373,4 +395,127 @@ a {
 }
 .formSubmit:hover {
     background-color: #7A43EF;
+}
+
+
+
+
+
+.recentStories {
+    margin-block: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.storiesContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 80%;
+    margin-block: 25px;
+    column-gap: 30px;
+    padding: 10px;
+}
+
+.bigCard {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: max(10px, 0.75vw);
+    width: calc(50% - 15px);
+    background-color: #F9F9F9;
+}
+.bigCard:hover {
+    background: #00000010;
+}
+
+.bigCardContainer2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+}
+
+.bigCardContainer3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 5px;
+    color: #434343;
+}
+
+.bigCardImage {
+    width: 100%;
+    border-start-start-radius: max(10px, 0.75vw);
+    border-start-end-radius: max(10px, 0.75vw);
+}
+
+.bigCardTitle {
+    font-family: Changa;
+    font-size: 25px;
+    color: #434343;
+    margin-block-end: 10px;
+}
+
+.bigCardDescription {
+    font-family: Roboto;
+    font-size: 15px;
+    color: #434343;
+}
+
+.bigCardButton{
+    height: 50px;
+    margin-left: 10px;
+}
+
+.smallCardContainer {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 15px);
+}
+
+.smallCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-block: 10px;
+    padding: 10px;
+    border-radius: max(10px, 0.75vw);
+    background-color: #F9F9F9;
+}
+.smallCard:hover {
+    background: #00000010;
+}
+
+.smallCardImage {
+    width: 30%;
+    height: fit-content;
+    border-radius: max(10px, 0.75vw);
+}
+
+@media (max-width: 1240px) {
+    .storiesContainer {
+        flex-direction: column;
+    }
+
+    .bigCard {
+        width: 100%;
+        align-items: center;
+    }
+    .smallCardContainer {
+        width: 100%;
+    }
+}
+
+.smallCardText {
+    margin: 15px;
+}
+
+.smallCardTitle {
+    font-family: Changa;
+    font-size: 25px;
+    color: #434343;
+    margin-block-end: 5px;
 }
