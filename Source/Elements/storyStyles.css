@@ -1,0 +1,236 @@
+@font-face {
+    font-family: "Signature";
+    src: url(Fonts/BlackSignature.otf);
+}
+@font-face {
+    font-family: "Changa";
+    src: url(Fonts/ChangaOne.ttf);
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(Fonts/Roboto.ttf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    min-width: 750px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.standardMargins {
+    margin-inline: 10%;
+}
+
+.nextBlock {
+    margin-block-start: 50px;
+}
+
+
+.fontSignature {
+    font-family: Signature;
+    font-size: 20px;
+    color: #3E3E3E;
+}
+
+.fontChangaLogo {
+    font-family: Changa;
+    font-size: 30px;
+}
+
+.purpleHighlight {
+    color:#8A53FF;
+}
+
+.genericTitle {
+    margin-block: 5px;
+    font-family: Changa;
+    font-size: 40px;
+    color: #434343;
+}
+
+.genericFlair {
+    margin-block: 5px;
+    font-family: Roboto;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    color:#8A53FF;
+}
+
+.genericDescription {
+    margin-block: 5px;
+    font-family: Roboto;
+    font-size: 20px;
+    color: #434343;
+}
+
+.largeTitle {
+    font-family: Changa;
+    font-size: 70px;
+    color: #434343;
+}
+
+.largeDescription {
+    font-family: Roboto;
+    font-size: 25px;
+    margin-top: 5px;
+    color: #434343;
+}
+
+.mediumTitle {
+    margin-block: 5px;
+    font-family: Changa;
+    font-size: 50px;
+    color: #434343;
+}
+
+.smallerTitle {
+    margin-block: 5px;
+    font-family: Changa;
+    font-size: 30px;
+    color: #434343;
+}
+
+.italicTitle {
+    margin-block: 5px;
+    font-family: Changa;
+    font-size: 40px;
+    font-style: italic;
+    color: #434343;
+}
+
+.avatarTitle {
+    font-family: Roboto;
+    font-size: 15px;
+    color: #434343;
+}
+
+.avatarOccupation {
+    margin-block: 5px;
+    font-family: Roboto;
+    font-size: 15px;
+    color: #A2A7B1;
+}
+
+
+
+
+
+
+.headerFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: calc(10% - 15px);
+    flex-wrap: wrap;
+}
+
+.headerLogo {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 15px;
+}
+.headerLogo:hover {
+    background-color: #EFEFEF;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.headerButton {
+    display: flex;
+    border-radius: 5px;
+    padding: 20px;
+    font-family: Roboto;
+    font-size: 15px;
+    color: #495367;
+}
+.headerButton:hover {
+    background-color: #EFEFEF;
+}
+
+.headerHighlight {
+    display: flex;
+    border-radius: 5px;
+    padding: 20px;
+    font-family: Roboto;
+    color:#8A53FF;
+}
+.headerHighlight:hover {
+    background-color: #EFEFEF;
+}
+
+.footerCopyright {
+    display: flex;
+    border-radius: 5px;
+    margin-block-end: 20px;
+    margin-inline: 15px;
+    font-family: Roboto;
+    font-size: 15px;
+    color: #495367;
+}
+
+.footerButton {
+    display: flex;
+    border-radius: 5px;
+    margin-block-end: 20px;
+    margin-inline: 15px;
+    font-family: Roboto;
+    font-size: 15px;
+    color: #495367;
+}
+
+
+
+
+
+.introductionContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-block-end: 15px;
+}
+
+.introductionText {
+    display: flex;
+    flex-direction: column;
+    width: min(66%, 415px);
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.introductionAvatar {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 5px;
+}
+.introductionAvatar:hover {
+    background: #00000010;
+}
+
+.halphText {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.videoWidth{
+    width: 100%;
+    border-radius: max(10px, 0.75vw);
+}
