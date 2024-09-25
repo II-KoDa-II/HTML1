@@ -98,6 +98,13 @@ a {
     color: #434343;
 }
 
+.smallerDescription {
+    font-family: Roboto;
+    font-size: 15px;
+    margin-top: 5px;
+    color: #434343;
+}
+
 .italicTitle {
     margin-block: 5px;
     font-family: Changa;
@@ -230,7 +237,56 @@ a {
     margin: 10px;
 }
 
-.videoWidth{
+
+
+
+
+.imageFill{
     width: 100%;
+    object-fit: contain;
     border-radius: max(10px, 0.75vw);
+}
+
+
+
+
+
+.halphTheParent {
+    width: 50%;
+    margin: 10px;
+    align-items: flex-start;
+}
+
+.directionRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.directionColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.additionalMargin {
+    margin-block-end: 20px;
+}
+
+.forbiddenLayout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.buttonSolid {
+    display: flex;
+    background-color: #8A53FF;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 15px;
+    color: #FFFFFF;
+    font-family: Roboto;
+}
+.buttonSolid:hover {
+    background-color: #7A43EF;
 }
